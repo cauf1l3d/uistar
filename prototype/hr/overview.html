@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Studio — USTAR Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles/tokens.css">
+<link rel="stylesheet" href="../../styles/base.css">
+<link rel="stylesheet" href="../../styles/components.css">
+<link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+<div class="app">
+  <nav class="sidenav" aria-label="Основная навигация">
+    <a class="sidenav__brand" href="../index.html">
+      <span class="brand-mark">U</span>
+      <span class="brand-name">USTAR<small>ACADEMY</small></span>
+    </a>
+    <div class="sidenav__group">
+      <div class="sidenav__label">HR Studio</div>
+      <a class="nav-item" href="overview.html" aria-current="page"><span class="nav-ico">⌂</span>Обзор</a>
+      <a class="nav-item" href="skills.html"><span class="nav-ico">◈</span>Навыки</a>
+      <a class="nav-item" href="content.html"><span class="nav-ico">▤</span>Материалы</a>
+      <a class="nav-item" href="builder.html"><span class="nav-ico">▶</span>Обучение</a>
+      <a class="nav-item" href="ladders.html"><span class="nav-ico">↗</span>Лестницы</a>
+      <a class="nav-item" href="employees.html"><span class="nav-ico">◫</span>Сотрудники</a>
+    </div>
+    <div class="sidenav__foot">Прототип · demo data<br><a href="../index.html">← Сменить роль</a></div>
+  </nav>
+  <header class="topbar">
+    <a class="topbar__brand-m" href="../index.html" style="display:none"><span class="brand-mark">U</span> USTAR</a>
+    <span class="topbar__title">HR Studio</span>
+    <span class="topbar__spacer"></span>
+    <span class="search-field">⌕ Поиск по знаниям и обучению…</span>
+    <span class="topbar__user"><span class="avatar">АГ</span><span>Амина Гаджиева<small>HR Studio</small></span></span>
+  </header>
+  <main class="main">
+    <div class="main__inner">
+      
+
+<div class="page-head">
+  <div class="page-head__text"><h1>HR Studio · Обзор</h1><p class="page-sub">Состояние учебного продукта компании: контент, назначения, дефициты.</p></div>
+  <a class="btn btn--primary" href="builder.html">+ Создать обучение</a>
+</div>
+<div class="stack">
+  <section class="grid grid--4">
+    <div class="card metric"><span class="metric__value">83<small>%</small></span><span class="metric__label">обязательное обучение в срок</span><span class="metric__trend metric__trend--up">▲ +4% за месяц</span></div>
+    <div class="card metric"><span class="metric__value">7</span><span class="metric__label">дефицитов контента</span><span class="metric__trend metric__trend--down">▼ 2 критических</span></div>
+    <div class="card metric"><span class="metric__value">12</span><span class="metric__label">материалов ждут ревизии</span><span class="metric__trend">старше 12 месяцев</span></div>
+    <div class="card metric"><span class="metric__value">9</span><span class="metric__label">сотрудников готовы к аттестации</span><span class="metric__trend metric__trend--up">3 заявки от руководителей</span></div>
+  </section>
+
+  <div class="grid grid--main-side">
+    <div class="stack">
+      <section class="card">
+        <div class="card__head"><h2>Дефицит контента</h2><a class="card__link" href="skills.html">Карта навыков →</a></div>
+        <div class="stack" style="--sp-4:10px">
+          <div class="gap-row"><div class="gap-row__body"><strong>Навык «Складская логистика» · уровень 3</strong><span>Требуется лестницей «Кладовщик → Старший кладовщик» · материалов нет</span></div><a class="btn btn--dark btn--sm" href="builder.html">Создать</a></div>
+          <div class="gap-row"><div class="gap-row__body"><strong>Навык «Корпоративные продажи» · уровень 2</strong><span>Назначено 6 сотрудникам · покрытие материалами 40%</span></div><a class="btn btn--dark btn--sm" href="builder.html">Дополнить</a></div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card__head"><h2>Очередь публикации</h2><a class="card__link" href="content.html">Все материалы →</a></div>
+        <div class="skill-row"><span class="skill-row__name">Обучение «Складская приёмка: базовый курс»</span><span class="badge badge--info">На проверке</span><a class="btn btn--secondary btn--sm" href="builder.html">Открыть</a></div>
+        <div class="skill-row"><span class="skill-row__name">Материал «Зимние монтажные пены»</span><span class="badge badge--neutral">Черновик</span><a class="btn btn--secondary btn--sm" href="editor.html">Открыть</a></div>
+        <div class="skill-row"><span class="skill-row__name">Игра «Собери заказ за 90 секунд»</span><span class="badge badge--info">На проверке</span><a class="btn btn--secondary btn--sm" href="#">Открыть</a></div>
+      </section>
+    </div>
+    <aside class="stack">
+      <section class="card risk-card">
+        <div class="card__head"><h3>Аудит актуальности</h3></div>
+        <p style="font-size:13px;color:var(--text-secondary)">12 материалов не обновлялись более года. 3 из них — в обязательном обучении.</p>
+        <a class="btn btn--secondary btn--sm" href="content.html">Список на ревизию</a>
+      </section>
+      <section class="card">
+        <div class="card__head"><h3>Мониторинг</h3></div>
+        <div class="skill-row"><span class="skill-row__name">Просрочки по компании</span><span class="badge badge--danger">17</span></div>
+        <div class="skill-row"><span class="skill-row__name">Активные обучения</span><span class="badge badge--neutral">64</span></div>
+        <div class="skill-row"><span class="skill-row__name">Изучаемость новых материалов</span><span class="badge badge--success">74%</span></div>
+      </section>
+    </aside>
+  </div>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<script src="../../scripts/prototype.js"></script>
+</body>
+</html>

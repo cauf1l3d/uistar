@@ -1,0 +1,1 @@
+Place USTAR/Express Market logo assets here (SVG preferred). Prototype uses a CSS brand-mark placeholder to avoid copying production binaries.

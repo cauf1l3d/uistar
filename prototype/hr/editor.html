@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Редактор материала — USTAR Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles/tokens.css">
+<link rel="stylesheet" href="../../styles/base.css">
+<link rel="stylesheet" href="../../styles/components.css">
+<link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+<div class="app">
+  <nav class="sidenav" aria-label="Основная навигация">
+    <a class="sidenav__brand" href="../index.html">
+      <span class="brand-mark">U</span>
+      <span class="brand-name">USTAR<small>ACADEMY</small></span>
+    </a>
+    <div class="sidenav__group">
+      <div class="sidenav__label">HR Studio</div>
+      <a class="nav-item" href="overview.html"><span class="nav-ico">⌂</span>Обзор</a>
+      <a class="nav-item" href="skills.html"><span class="nav-ico">◈</span>Навыки</a>
+      <a class="nav-item" href="content.html"><span class="nav-ico">▤</span>Материалы</a>
+      <a class="nav-item" href="builder.html"><span class="nav-ico">▶</span>Обучение</a>
+      <a class="nav-item" href="ladders.html"><span class="nav-ico">↗</span>Лестницы</a>
+      <a class="nav-item" href="employees.html"><span class="nav-ico">◫</span>Сотрудники</a>
+    </div>
+    <div class="sidenav__foot">Прототип · demo data<br><a href="../index.html">← Сменить роль</a></div>
+  </nav>
+  <header class="topbar">
+    <a class="topbar__brand-m" href="../index.html" style="display:none"><span class="brand-mark">U</span> USTAR</a>
+    <span class="topbar__title">Редактор материала</span>
+    <span class="topbar__spacer"></span>
+    <span class="search-field">⌕ Поиск по знаниям и обучению…</span>
+    <span class="topbar__user"><span class="avatar">АГ</span><span>Амина Гаджиева<small>HR Studio</small></span></span>
+  </header>
+  <main class="main">
+    <div class="main__inner">
+      
+
+<div class="page-head">
+  <div class="page-head__text">
+    <div class="breadcrumbs"><a href="content.html">Материалы</a> / Зимние монтажные пены</div>
+    <h1>Редактор материала</h1>
+    <p class="page-sub"><span class="badge badge--neutral">Черновик</span> · автосохранение включено</p>
+  </div>
+  <div style="display:flex;gap:8px">
+    <a class="btn btn--secondary" href="#">Предпросмотр</a>
+    <a class="btn btn--primary" href="content.html">Отправить на проверку</a>
+  </div>
+</div>
+<div class="grid grid--main-side">
+  <section class="card">
+    <div class="field"><label for="t">Название</label><input class="input" id="t" value="Зимние монтажные пены"></div>
+    <div class="field"><label for="s">Короткое описание</label><input class="input" id="s" value="Чем зимняя пена отличается от летней и что предлагать при -10 °C"></div>
+    <div class="field"><label for="b">Содержание</label><textarea class="textarea" id="b" style="min-height:220px">Зимняя пена сохраняет выход и адгезию при температуре до −18 °C…
+
+## Что спросить у покупателя
+1. Наружные или внутренние работы?
+2. Какая температура на объекте?</textarea></div>
+    <button class="btn btn--ghost" data-disclose="adv" aria-expanded="false">Дополнительно ▾</button>
+    <div id="adv" hidden style="margin-top:12px">
+      <div class="field"><label>Срок актуальности</label><select class="select"><option>12 месяцев (стандарт)</option><option>6 месяцев</option><option>Бессрочно</option></select><span class="hint">По истечении срока материал попадёт в аудит актуальности.</span></div>
+      <div class="field"><label>Владелец материала</label><select class="select"><option>Категорийный менеджер · стройматериалы</option></select></div>
+    </div>
+  </section>
+  <aside class="stack">
+    <section class="card">
+      <div class="card__head"><h3>Связи</h3></div>
+      <div class="field"><label>Категория знаний</label><select class="select"><option>Товар и ассортимент</option></select></div>
+      <div class="field"><label>Навыки</label><div><span class="badge badge--dark">Знание товара: стройматериалы · ур. 2</span></div><a class="card__link" href="#">+ добавить навык</a></div>
+      <div class="field"><label>Используется в обучении</label><p style="font-size:13px;color:var(--text-secondary);margin:0">Ассортимент: строительная химия (шаг 2)</p></div>
+    </section>
+    <section class="card">
+      <div class="card__head"><h3>Аудитория</h3></div>
+      <p style="font-size:13px;color:var(--text-secondary)">Роли: продавец-консультант, старший смены.<br>Назначится автоматически через навык.</p>
+    </section>
+  </aside>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<script src="../../scripts/prototype.js"></script>
+</body>
+</html>
