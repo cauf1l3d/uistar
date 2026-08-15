@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вход — USTAR Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles/tokens.css">
+<link rel="stylesheet" href="../../styles/base.css">
+<link rel="stylesheet" href="../../styles/components.css">
+<link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+<div class="login-page">
+  <section class="login-brandside">
+    <a class="sidenav__brand" style="border:0;padding:0" href="../index.html">
+      <span class="brand-mark">U</span>
+      <span class="brand-name">USTAR<small>ACADEMY</small></span>
+    </a>
+    <div>
+      <h1>Знания, которые <span class="gold">работают в зале.</span></h1>
+      <p style="color:var(--text-on-shell-dim);max-width:380px">Корпоративная академия Express Market: обучение, навыки и карьерные ступени для каждой роли.</p>
+    </div>
+    <p style="font-size:12px;color:var(--text-on-shell-dim)">© USTAR Academy · внутренняя система компании</p>
+  </section>
+  <section class="login-formside">
+    <form class="login-card card" action="home.html">
+      <h2 style="margin-bottom:4px">Вход в академию</h2>
+      <p class="page-sub" style="margin-bottom:20px">Используйте рабочую учётную запись</p>
+      <div class="field">
+        <label for="u">Логин или табельный номер</label>
+        <input class="input" id="u" name="u" autocomplete="username" placeholder="m.aliev">
+      </div>
+      <div class="field">
+        <label for="p">Пароль</label>
+        <input class="input" id="p" name="p" type="password" autocomplete="current-password" placeholder="••••••••">
+      </div>
+      <button class="btn btn--primary btn--lg" style="width:100%" type="submit">Войти</button>
+      <p style="text-align:center;margin-top:14px"><a class="card__link" href="#">Не получается войти?</a></p>
+    </form>
+  </section>
+</div>
+</body>
+</html>

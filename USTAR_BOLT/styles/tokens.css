@@ -1,0 +1,83 @@
+/* ============================================================
+   USTAR ACADEMY — DESIGN TOKENS v1
+   Single semantic token layer. No raw hex below component level.
+   Maps to future Moodle child theme: LEVEL 1 (SCSS variables).
+   ============================================================ */
+
+:root {
+  /* ---------- Brand core ---------- */
+  --ustar-graphite-900: #1B1B1B; /* deepest shell */
+  --ustar-graphite-800: #202020; /* brand graphite */
+  --ustar-graphite-700: #282828;
+  --ustar-graphite-600: #2B2B2B;
+  --ustar-graphite-500: #3A3A3A;
+  --ustar-gold:         #EBC500; /* USTAR identity / primary action */
+  --ustar-gold-bright:  #F5D200; /* hover */
+  --ustar-gold-deep:    #C7A700; /* pressed / borders on light */
+  --ustar-white:        #FFFFFF;
+  --ustar-paper:        #F4F4F1; /* app background */
+  --ustar-paper-2:      #EDEDED; /* alternate surface */
+
+  /* ---------- Semantic: surfaces ---------- */
+  --surface-app:        var(--ustar-paper);
+  --surface-card:       var(--ustar-white);
+  --surface-sunken:     var(--ustar-paper-2);
+  --surface-shell:      var(--ustar-graphite-800); /* sidebar / topbar */
+  --surface-shell-2:    var(--ustar-graphite-700);
+  --surface-inverse:    var(--ustar-graphite-600);
+
+  /* ---------- Semantic: text ---------- */
+  --text-primary:       #1F1F1F;
+  --text-secondary:     #55554F;
+  --text-muted:         #8A8A82;
+  --text-on-shell:      #ECECEC;
+  --text-on-shell-dim:  #9C9C96;
+  --text-on-gold:       #1F1B00;
+  --text-invert:        #FFFFFF;
+
+  /* ---------- Semantic: borders ---------- */
+  --border-default:     #E3E3DC;
+  --border-strong:      #C9C9C0;
+  --border-on-shell:    #33332F;
+
+  /* ---------- Semantic: status ---------- */
+  --status-success:     #2E8B57;
+  --status-success-bg:  #E8F4EC;
+  --status-warning:     #D97A1F;
+  --status-warning-bg:  #FBF0E2;
+  --status-info:        #2F6FD0;
+  --status-info-bg:     #E9F0FB;
+  --status-danger:      #C93B3B;
+  --status-danger-bg:   #FAEAEA;
+  --status-locked:      #B4B4AC;
+
+  /* ---------- Brand action ---------- */
+  --action-primary:       var(--ustar-gold);
+  --action-primary-hover: var(--ustar-gold-bright);
+  --action-primary-text:  var(--text-on-gold);
+  --focus-ring:           0 0 0 3px rgba(235, 197, 0, .45);
+
+  /* ---------- Radii (Visual grammar: 4–8px) ---------- */
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+
+  /* ---------- Spacing ---------- */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-7: 32px; --sp-8: 40px;
+
+  /* ---------- Type ---------- */
+  --font-body: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-head: "Montserrat", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --fs-12: 12px; --fs-13: 13px; --fs-14: 14px; --fs-15: 15px;
+  --fs-16: 16px; --fs-18: 18px; --fs-22: 22px; --fs-28: 28px; --fs-36: 36px;
+
+  /* ---------- Shadows (minimal by constitution) ---------- */
+  --shadow-pop: 0 8px 24px rgba(20, 20, 20, .14);
+
+  /* ---------- Layout ---------- */
+  --sidenav-w: 232px;
+  --topbar-h: 56px;
+  --content-max: 1180px;
+  --reading-max: 760px;
+}

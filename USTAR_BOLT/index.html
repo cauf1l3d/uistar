@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USTAR Academy — UI Prototype v1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/responsive.css">
+<style>
+  body { background: var(--surface-shell); }
+  .hero { max-width: 1080px; margin: 0 auto; padding: 56px 24px 24px; color: var(--text-on-shell); }
+  .hero h1 { color: var(--text-invert); font-size: 34px; margin-bottom: 8px; }
+  .hero .gold { color: var(--ustar-gold); }
+  .roles { max-width: 1080px; margin: 0 auto; padding: 0 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .role-card { background: var(--surface-card); border-radius: var(--radius-l); padding: 24px; border-top: 4px solid var(--ustar-gold); }
+  .role-card h2 { font-size: 18px; margin-bottom: 4px; }
+  .role-card p { font-size: 13px; color: var(--text-secondary); }
+  .role-card ul { list-style: none; margin: 12px 0 0; padding: 0; font-size: 13px; }
+  .role-card li { margin: 4px 0; }
+  .role-card a { color: var(--text-primary); font-weight: 600; text-decoration: none; }
+  .role-card a:hover { color: var(--ustar-gold-deep); }
+  .role-card .btn { margin-top: 14px; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px">
+    <span class="brand-mark" style="width:36px;height:36px;font-size:19px">U</span>
+    <span class="brand-name" style="font-size:17px">USTAR<small>ACADEMY · UI PROTOTYPE v1</small></span>
+  </div>
+  <h1>Одна академия. <span class="gold">Пять ролей.</span> Ноль Moodle-терминов.</h1>
+  <p style="color:var(--text-on-shell-dim);max-width:640px">Локальный прототип целевого интерфейса USTAR Academy. Демо-данные, без API и production. Выберите роль:</p>
+</div>
+<div class="roles">
+  <section class="role-card">
+    <h2>Сотрудник</h2>
+    <p>Мобильный приоритет. «Что мне делать сейчас?»</p>
+    <ul>
+      <li><a href="prototype/employee/login.html">Вход</a></li>
+      <li><a href="prototype/employee/home.html">Главная</a> · <a href="prototype/employee/learning.html">Обучение</a> · <a href="prototype/employee/course.html">Путь обучения</a></li>
+      <li><a href="prototype/employee/activity.html">Урок</a> · <a href="prototype/employee/quiz.html">Проверка знаний</a></li>
+      <li><a href="prototype/employee/knowledge.html">Знания</a> · <a href="prototype/employee/knowledge-category.html">Категория</a> · <a href="prototype/employee/knowledge-item.html">Материал</a></li>
+      <li><a href="prototype/employee/career.html">Развитие</a> · <a href="prototype/employee/skills.html">Навыки</a> · <a href="prototype/employee/team.html">Команда</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm" href="prototype/employee/home.html">Открыть →</a>
+  </section>
+  <section class="role-card">
+    <h2>Руководитель</h2>
+    <p>Исключения, а не отчёты: просрочки, риски, готовность людей.</p>
+    <ul>
+      <li><a href="prototype/manager/team.html">Команда (дашборд)</a></li>
+      <li><a href="prototype/manager/employee.html">Профиль сотрудника</a></li>
+      <li><a href="prototype/manager/knowledge.html">Знания команды</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm" href="prototype/manager/team.html">Открыть →</a>
+  </section>
+  <section class="role-card">
+    <h2>HR Studio</h2>
+    <p>Редакция учебного продукта: навыки, материалы, лестницы, дефициты.</p>
+    <ul>
+      <li><a href="prototype/hr/overview.html">Обзор</a> · <a href="prototype/hr/skills.html">Навыки</a> · <a href="prototype/hr/skill.html">Навык</a></li>
+      <li><a href="prototype/hr/content.html">Материалы</a> · <a href="prototype/hr/editor.html">Редактор материала</a></li>
+      <li><a href="prototype/hr/builder.html">Конструктор обучения</a></li>
+      <li><a href="prototype/hr/ladders.html">Лестницы</a> · <a href="prototype/hr/ladder-editor.html">Редактор лестницы</a></li>
+      <li><a href="prototype/hr/employees.html">Сотрудники</a> · <a href="prototype/hr/employee-editor.html">Карточка</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm" href="prototype/hr/overview.html">Открыть →</a>
+  </section>
+  <section class="role-card">
+    <h2>CEO / Executive</h2>
+    <p>Только бизнес-картина: готовность, риски, резерв.</p>
+    <ul>
+      <li><a href="prototype/executive/overview.html">Готовность компании</a></li>
+      <li><a href="prototype/executive/department.html">Отдел (drilldown)</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm" href="prototype/executive/overview.html">Открыть →</a>
+  </section>
+  <section class="role-card">
+    <h2>Technical Admin</h2>
+    <p>USTAR MODE ⇄ TECHNICAL MODE. Сила Moodle сохраняется.</p>
+    <ul>
+      <li><a href="prototype/admin/mode.html">Переключение режимов</a></li>
+      <li><a href="prototype/admin/technical.html">Технический режим</a></li>
+    </ul>
+    <a class="btn btn--primary btn--sm" href="prototype/admin/mode.html">Открыть →</a>
+  </section>
+</div>
+</body>
+</html>

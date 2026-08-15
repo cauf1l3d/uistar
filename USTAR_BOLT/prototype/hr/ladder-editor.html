@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Редактор лестницы — USTAR Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles/tokens.css">
+<link rel="stylesheet" href="../../styles/base.css">
+<link rel="stylesheet" href="../../styles/components.css">
+<link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+<div class="app">
+  <nav class="sidenav" aria-label="Основная навигация">
+    <a class="sidenav__brand" href="../index.html">
+      <span class="brand-mark">U</span>
+      <span class="brand-name">USTAR<small>ACADEMY</small></span>
+    </a>
+    <div class="sidenav__group">
+      <div class="sidenav__label">HR Studio</div>
+      <a class="nav-item" href="overview.html"><span class="nav-ico">⌂</span>Обзор</a>
+      <a class="nav-item" href="skills.html"><span class="nav-ico">◈</span>Навыки</a>
+      <a class="nav-item" href="content.html"><span class="nav-ico">▤</span>Материалы</a>
+      <a class="nav-item" href="builder.html"><span class="nav-ico">▶</span>Обучение</a>
+      <a class="nav-item" href="ladders.html"><span class="nav-ico">↗</span>Лестницы</a>
+      <a class="nav-item" href="employees.html"><span class="nav-ico">◫</span>Сотрудники</a>
+    </div>
+    <div class="sidenav__foot">Прототип · demo data<br><a href="../index.html">← Сменить роль</a></div>
+  </nav>
+  <header class="topbar">
+    <a class="topbar__brand-m" href="../index.html" style="display:none"><span class="brand-mark">U</span> USTAR</a>
+    <span class="topbar__title">Редактор лестницы</span>
+    <span class="topbar__spacer"></span>
+    <span class="search-field">⌕ Поиск по знаниям и обучению…</span>
+    <span class="topbar__user"><span class="avatar">АГ</span><span>Амина Гаджиева<small>HR Studio</small></span></span>
+  </header>
+  <main class="main">
+    <div class="main__inner">
+      
+
+<div class="page-head">
+  <div class="page-head__text">
+    <div class="breadcrumbs"><a href="ladders.html">Лестницы</a> / Кладовщик</div>
+    <h1>Лестница «Кладовщик»</h1>
+    <p class="page-sub">4 ступени · 25 сотрудников · дефицит на ступени 3</p>
+  </div>
+  <a class="btn btn--primary" href="#">Сохранить изменения</a>
+</div>
+<div class="grid grid--main-side">
+  <section class="stack">
+    <div class="career">
+      <div class="career__step career__step--done"><span class="career__state">Ступень 1</span><h3>Стажёр склада</h3><p>2 навыка · 3 обучения</p></div>
+      <div class="career__step career__step--done"><span class="career__state">Ступень 2</span><h3>Кладовщик</h3><p>3 навыка · 4 обучения</p></div>
+      <div class="career__step career__step--current"><span class="career__state" style="color:var(--ustar-gold-deep)">Ступень 3 · дефицит</span><h3>Старший кладовщик</h3><p>4 навыка · 1 не покрыт</p></div>
+      <div class="career__step"><span class="career__state">Ступень 4</span><h3>Руководитель склада</h3><p>5 навыков · 6 обучений</p></div>
+    </div>
+    <section class="card">
+      <div class="card__head"><h2>Требования ступени 3 · «Старший кладовщик»</h2><a class="card__link" href="#">+ Добавить требование</a></div>
+      <div class="skill-row"><span class="skill-row__name">Складская логистика · уровень 3</span><span class="badge badge--danger">Материалов нет</span><a class="btn btn--dark btn--sm" href="builder.html">Создать обучение</a></div>
+      <div class="skill-row"><span class="skill-row__name">Учёт остатков · уровень 2</span><span class="badge badge--success">Покрыто</span></div>
+      <div class="skill-row"><span class="skill-row__name">Практика: инвентаризация под контролем</span><span class="badge badge--success">Настроено</span></div>
+      <div class="skill-row"><span class="skill-row__name">Стаж на ступени 2 · от 6 месяцев</span><span class="badge badge--neutral">Правило</span></div>
+    </section>
+    <div class="alert alert--warning"><span>⚠</span><span><b>Дефицит блокирует рост</b>8 сотрудников выполнили все требования, кроме навыка «Складская логистика · уровень 3». Закройте дефицит контента — и они смогут пройти аттестацию.</span></div>
+  </section>
+  <aside class="stack">
+    <section class="card">
+      <div class="card__head"><h3>Люди на лестнице</h3></div>
+      <div class="skill-row"><span class="skill-row__name">Ступень 1</span><span class="badge badge--neutral">4 чел.</span></div>
+      <div class="skill-row"><span class="skill-row__name">Ступень 2</span><span class="badge badge--neutral">17 чел.</span></div>
+      <div class="skill-row"><span class="skill-row__name">Ступень 3</span><span class="badge badge--neutral">3 чел.</span></div>
+      <div class="skill-row"><span class="skill-row__name">Ступень 4</span><span class="badge badge--neutral">1 чел.</span></div>
+    </section>
+  </aside>
+</div>
+
+    </div>
+  </main>
+</div>
+
+<script src="../../scripts/prototype.js"></script>
+</body>
+</html>
